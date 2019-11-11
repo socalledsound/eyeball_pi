@@ -49,6 +49,20 @@ function mousePressed() {
   // ellipse(400,400,800);
 }
 
+function keyPressed(){
+
+	if(keyCode === LEFT_ARROW){
+	 	player1.x = player1.x - 6;
+     		console.log("left key");
+		
+	} else if(keyCode === RIGHT_ARROW){
+		player1.x = player1.x + 6;
+     		console.log("right key");
+	} 	
+	
+	
+}
+
 var Player = function() {
 
 	this.x = width/2-50;
